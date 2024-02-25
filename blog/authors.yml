@@ -1,17 +1,7 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
-
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+santthosh:
+  name: Santthosh Babu Selvadurai
+  title: Maintainer of Assistants Hub
+  url: https://github.com/santthosh
+  image_url: https://github.com/santthosh.png
+  bio: |
+        Santthosh is a software engineer and open source enthusiast. He is the maintainer of Assistants Hub and has contributed to various open source projects. He is passionate about building tools that help developers be more productive.
