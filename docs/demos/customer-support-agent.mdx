@@ -1,8 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Manage Docs Versions
+# Customer Support Agent
+
+## Assistant Configuration
 
 Docusaurus can manage multiple versions of your docs.
 
@@ -43,13 +45,14 @@ export default {
 };
 ```
 
-The docs version dropdown appears in your navbar:
+export const Assistant = () => {
+  return (
+    <div>
+        <iframe src="https://www.assistantshub.ai/embed/asst_3Qb3o7LQggDiA3Tj3H0xrxI4"
+         style={{right: 0, position: "fixed", overflow: "hidden", height: "100vh", border: "0 none", width: "480px", bottom: "40px"}}
+         allowFullScreen allowTransparency></iframe>
+    </div>
+  );
+};
 
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
-
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+<Assistant/>
