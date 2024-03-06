@@ -4,46 +4,16 @@ sidebar_position: 2
 
 # Customer Support Agent
 
+<div style={{display:"inline-block"}}>
+    <div style={{float:"left",paddingRight:10}}>![Assistant](images/customer-support-icon.png)</div>
+    Introducing Wikipedia technical support, your go-to assistant for all things Wikipedia! Whether you're navigating the complexities of editing articles, figuring out citation guidelines, or troubleshooting account issues, help is here to simplify your Wikipedia experience. With clear, step-by-step guidance and expert advice, this assistant ensures you have all the tools and knowledge at your fingertips to contribute effectively to the world's largest encyclopedia. From beginners to seasoned editors, WikiTech Helper is dedicated to enhancing your Wikipedia journey with seamless support and valuable insights.
+</div>
+
 ## Assistant Configuration
 
-Docusaurus can manage multiple versions of your docs.
+Below is the configuration for the assistant. Lets create your own assistant at [AssistantHub](https://www.assistantshub.ai/)
 
-## Create a docs version
-
-Release a version 1.0 of your project:
-
-```bash
-npm run docusaurus docs:version 1.0
-```
-
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
-
-Your docs now have 2 versions:
-
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
-
-## Add a Version Dropdown
-
-To navigate seamlessly across versions, add a version dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
+![Customer Support Agent](images/customer-support.png)
 
 export const Assistant = () => {
   return (

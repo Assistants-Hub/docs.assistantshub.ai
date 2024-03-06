@@ -58,12 +58,17 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Assistants Hub - Docs',
+      title: 'Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Assistants Hub Logo',
         src: 'img/logo.png',
       },
       items: [
+        {
+          to: 'https://www.assistantshub.ai',
+          label: 'Home',
+          position: 'left',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
@@ -73,7 +78,7 @@ const config: Config = {
         {to: '/docs/category/demos', label: 'Demos', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/assistants-hub/assistantshub.ai',
+          to: 'https://github.com/assistants-hub/assistantshub.ai',
           label: 'GitHub',
           position: 'right',
         },
