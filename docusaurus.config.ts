@@ -54,13 +54,7 @@ const config: Config = {
     ],
   ],
   plugins: [
-    [
-      'vercel-analytics',
-      {
-        debug: true,
-        mode: 'auto',
-      },
-    ],
+    "@gracefullight/docusaurus-plugin-vercel-analytics",
   ],
 
   themeConfig: {
