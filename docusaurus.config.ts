@@ -113,7 +113,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Assistants Hub, Inc. All rights reserved.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Assistants Hub, LLC. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,
