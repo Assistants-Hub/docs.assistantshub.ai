@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-Welcome to Assistants Hub, where you can **Build, Integrate, and Deploy AI Assistants in Minutes**. This project leverages the power of Next.js and OpenAI to provide a streamlined platform for creating sophisticated AI assistants. Our mission is to democratize AI development, making it accessible for developers, hobbyists, and businesses to innovate and implement AI solutions effortlessly.
+Welcome to Assistants Hub, where you can **Build, Integrate, and Deploy AI Assistants in Minutes**. This project leverages the power of Next.js, OpenAI, Google and Others to provide a streamlined platform for creating sophisticated AI assistants. Our mission is to democratize AI development, making it accessible for developers, hobbyists, and businesses to innovate and implement AI solutions effortlessly.
 
 ## Key Features
 
@@ -20,3 +20,6 @@ Explore our [Guides](./guides/assistant-operations.md) to get started with Assis
 <hr/>
 <br/>
 ![Assistants Hub](./images/assistants-hub.png)
+<hr/>
+<br/>
+Google is a registered trademark of Google LLC. OpenAI is a trademark of OpenAI, Inc. AssistantsHub is not affiliated with, endorsed by, or sponsored by Google LLC or OpenAI, Inc. Reference to any products, services, processes, or other information by trade name, trademark, manufacturer, supplier, or otherwise does not constitute or imply endorsement, sponsorship, or recommendation by Google LLC or OpenAI, Inc.
