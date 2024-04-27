@@ -1,29 +1,37 @@
 ---
 sidebar_position: 4
 ---
+import "./styles.css";
 
 # Creative Recipe Suggestions
 
-<div style={{display:"inline-block"}}>
-    <div style={{float:"left",paddingRight:10}}>![Assistant](images/creative-recipe-suggestions-icon.png)</div>
-   Introducing Culinary Compass, your AI-powered guide to endless culinary adventures! With a knack for understanding your taste preferences, dietary needs, and the ingredients you have on hand, this smart assistant suggests delicious recipes tailored just for you. Whether you're in the mood for a quick weeknight dinner, a healthy snack, or an elaborate meal to impress guests, Culinary Compass navigates the vast world of flavors to bring you the perfect recipe every time. Get ready to explore new cuisines, experiment with diverse ingredients, and enjoy homemade meals that delight your palate. Culinary Compass is here to turn every meal into a journey worth savoring.
-</div>
-
-## Assistant Configuration
-
-Below is the configuration for the assistant. Lets create your own assistant at [AssistantHub](https://www.assistantshub.ai/)
-
-![Customer Support Agent](images/creative-recipe-suggestions.png)
-
+<table className="responsive-table">
+    <tr style={{border:"0"}}>
+        <td style={{border:"0"}}>
+            <Assistant/>
+        </td>
+        <td style={{verticalAlign:"top",border:"0"}}>
+            <div style={{display:"inline-block"}}>
+                <div style={{float:"left",paddingRight:10,width:200}}>![Assistant](images/creative-recipe-suggestions-icon.png)</div>
+                Introducing Culinary Compass, your AI-powered guide to endless culinary adventures! With a knack for understanding your taste preferences, dietary needs, and the ingredients you have on hand, this smart assistant suggests delicious recipes tailored just for you. Whether you're in the mood for a quick weeknight dinner, a healthy snack, or an elaborate meal to impress guests, Culinary Compass navigates the vast world of flavors to bring you the perfect recipe every time. Get ready to explore new cuisines, experiment with diverse ingredients, and enjoy homemade meals that delight your palate. Culinary Compass is here to turn every meal into a journey worth savoring.
+                <br/>
+                <h3>Assistant Configuration</h3>
+                <p><strong>Name:</strong> Culinary Compass</p>
+                <p><strong>Description:</strong> AI assistant for innovative recipes</p>
+                <p><strong>Instructions:</strong> You are a trained chef. Provide innovative, great tasting recipes based on the ingredients given to you </p>
+                <p><strong>Model Provider:</strong> OpenAI</p>
+                <p><strong>Model:</strong> gpt-4-turbo</p>
+            </div>
+        </td>
+    </tr>
+</table>
 
 export const Assistant = () => {
   return (
     <div>
-        <iframe src="https://www.assistantshub.ai/embed/asst_WgPnWUYjLWU8NVCpDk2xjQ45"
-         style={{right: 0, position: "fixed", overflow: "hidden", height: "80vh", border: "0 none", width: "80vw", bottom: "40px"}}
+        <iframe src="https://www.assistantshub.ai/embed/asst_WgPnWUYjLWU8NVCpDk2xjQ45?style=window"
+         style={{height: "800px", border: "0 none", width: "480px", minWidth: "340px"}}
          allowFullScreen allowTransparency></iframe>
     </div>
   );
 };
-
-<Assistant/>

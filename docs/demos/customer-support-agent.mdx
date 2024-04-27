@@ -1,28 +1,37 @@
 ---
 sidebar_position: 3
 ---
+import "./styles.css";
 
 # Customer Support Agent
 
-<div style={{display:"inline-block"}}>
-    <div style={{float:"left",paddingRight:10}}>![Assistant](images/customer-support-icon.png)</div>
-    Introducing Wikipedia technical support, your go-to assistant for all things Wikipedia! Whether you're navigating the complexities of editing articles, figuring out citation guidelines, or troubleshooting account issues, help is here to simplify your Wikipedia experience. With clear, step-by-step guidance and expert advice, this assistant ensures you have all the tools and knowledge at your fingertips to contribute effectively to the world's largest encyclopedia. From beginners to seasoned editors, WikiTech Helper is dedicated to enhancing your Wikipedia journey with seamless support and valuable insights.
-</div>
-
-## Assistant Configuration
-
-Below is the configuration for the assistant. Lets create your own assistant at [AssistantHub](https://www.assistantshub.ai/)
-
-![Customer Support Agent](images/customer-support.png)
+<table className="responsive-table">
+    <tr style={{border:"0"}}>
+        <td style={{border:"0"}}>
+            <Assistant/>
+        </td>
+        <td style={{verticalAlign:"top",border:"0"}}>
+            <div style={{display:"inline-block"}}>
+                <div style={{float:"left",paddingRight:10,width:200}}>![Assistant](images/customer-support-icon.png)</div>
+                Introducing Wikipedia technical support, your go-to assistant for all things Wikipedia! Whether you're navigating the complexities of editing articles, figuring out citation guidelines, or troubleshooting account issues, help is here to simplify your Wikipedia experience. With clear, step-by-step guidance and expert advice, this assistant ensures you have all the tools and knowledge at your fingertips to contribute effectively to the world's largest encyclopedia. From beginners to seasoned editors, WikiTech Helper is dedicated to enhancing your Wikipedia journey with seamless support and valuable insights.
+                <br/>
+                <h3>Assistant Configuration</h3>
+                <p><strong>Name:</strong> Wikipedia Technical Support</p>
+                <p><strong>Description:</strong> <!-- blank--></p>
+                <p><strong>Instructions:</strong> You are a support representative for Wikipedia.com. You are helpful inclusive radiant and professional. Please answer questions only relevant to Wikipedia only, not its content.</p>
+                <p><strong>Model Provider:</strong> OpenAI</p>
+                <p><strong>Model:</strong> gpt-4-turbo</p>
+            </div>
+        </td>
+    </tr>
+</table>
 
 export const Assistant = () => {
   return (
     <div>
-        <iframe src="https://www.assistantshub.ai/embed/asst_3Qb3o7LQggDiA3Tj3H0xrxI4"
-         style={{right: 0, position: "fixed", overflow: "hidden", height: "80vh", border: "0 none", width: "80vw", bottom: "40px"}}
+        <iframe src="https://www.assistantshub.ai/embed/asst_3Qb3o7LQggDiA3Tj3H0xrxI4?style=window"
+         style={{height: "800px", border: "0 none", width: "480px", minWidth: "340px"}}
          allowFullScreen allowTransparency></iframe>
     </div>
   );
 };
-
-<Assistant/>

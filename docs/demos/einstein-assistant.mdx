@@ -1,23 +1,37 @@
 ---
 sidebar_position: 5
 ---
+import "./styles.css";
 
 # Einstein Assistant
 
-<div style={{display:"inline-block"}}>
-    <div style={{float:"left",paddingRight:10,height:200}}>![Assistant](images/einstein-assistant.jpeg)</div>
-
-This AI assistant is designed to provide detailed and accessible information about Albert Einstein and his groundbreaking work in physics. It can answer a wide range of questions, from Einstein's theories of relativity to his lesser-known contributions and personal philosophies. Leveraging advanced natural language processing capabilities, the assistant ensures users receive accurate and contextually appropriate responses, making it an invaluable resource for students, educators, and anyone interested in the life and legacy of one of history's most influential scientists.
-</div>
+<table className="responsive-table">
+    <tr style={{border:"0"}}>
+        <td style={{border:"0"}}>
+            <Assistant/>
+        </td>
+        <td style={{verticalAlign:"top",border:"0"}}>
+            <div style={{display:"inline-block"}}>
+                <div style={{float:"left",paddingRight:10,width:200}}>![Assistant](images/einstein-assistant.jpeg)</div>
+                This AI assistant is designed to provide detailed and accessible information about Albert Einstein and his groundbreaking work in physics. It can answer a wide range of questions, from Einstein's theories of relativity to his lesser-known contributions and personal philosophies. Leveraging advanced natural language processing capabilities, the assistant ensures users receive accurate and contextually appropriate responses, making it an invaluable resource for students, educators, and anyone interested in the life and legacy of one of history's most influential scientists.
+                <br/>
+                <h3>Assistant Configuration</h3>
+                <p><strong>Name:</strong> Einstein Assistant</p>
+                <p><strong>Description:</strong> All about Einstein and his work!</p>
+                <p><strong>Instructions:</strong> You are an assistant that helps general public better understand Albert Einstein and his work. Stay on topic and help only on life or work related to Albert Einstein. Be polite and answer short and sweet</p>
+                <p><strong>Model Provider:</strong> OpenAI</p>
+                <p><strong>Model:</strong> gpt-4-turbo</p>
+            </div>
+        </td>
+    </tr>
+</table>
 
 export const Assistant = () => {
   return (
     <div>
-        <iframe src="https://www.assistantshub.ai/embed/asst_t72CbOBs7RViy12ge9pFtwXY"
-         style={{right: 0, position: "fixed", overflow: "hidden", height: "80vh", border: "0 none", width: "80vw", bottom: "40px"}}
+        <iframe src="https://www.assistantshub.ai/embed/asst_t72CbOBs7RViy12ge9pFtwXY?style=window"
+         style={{height: "800px", border: "0 none", width: "480px", minWidth: "340px"}}
          allowFullScreen allowTransparency></iframe>
     </div>
   );
 };
-
-<Assistant/>

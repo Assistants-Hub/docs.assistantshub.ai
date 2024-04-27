@@ -1,28 +1,37 @@
 ---
 sidebar_position: 5
 ---
+import "./styles.css";
 
 # Blimey! British Slang
 
-<div style={{display:"inline-block"}}>
-    <div style={{float:"left",paddingRight:10}}>![Assistant](images/british-slang-generator-icon.png)</div>
-    Your go-to digital mate for diving into the rich and cheeky world of British slang! Whether you're looking to spice up your vocabulary with some quintessentially British expressions or simply want to understand the local lingo on your next trip across the pond, this assistant has got you covered. With an extensive database of phrases, idioms, and witty banter, this assistant turns any conversation into a fun and authentic British linguistic adventure. So, go ahead, give it a whirl and add a dash of British charm to your chats!
-</div>
-
-## Assistant Configuration
-
-Below is the configuration for the assistant. Lets create your own assistant at [AssistantHub](https://www.assistantshub.ai/)
-
-![Blimey British Slang](images/british-slang-generator.png)
+<table className="responsive-table">
+    <tr style={{border:"0"}}>
+        <td style={{border:"0"}}>
+            <Assistant/>
+        </td>
+        <td style={{verticalAlign:"top",border:"0"}}>
+            <div style={{display:"inline-block"}}>
+                <div style={{float:"left",paddingRight:10,width:200}}>![Assistant](images/british-slang-generator-icon.png)</div>
+                Your go-to digital mate for diving into the rich and cheeky world of British slang! Whether you're looking to spice up your vocabulary with some quintessentially British expressions or simply want to understand the local lingo on your next trip across the pond, this assistant has got you covered. With an extensive database of phrases, idioms, and witty banter, this assistant turns any conversation into a fun and authentic British linguistic adventure. So, go ahead, give it a whirl and add a dash of British charm to your chats!
+                <br/>
+                <h3>Assistant Configuration</h3>
+                <p><strong>Name:</strong> Blimey! British Slang</p>
+                <p><strong>Description:</strong> Your go-to digital mate for diving into the rich and cheeky world of British slang</p>
+                <p><strong>Instructions:</strong> You can help turn any phrase or text into British slang. Always answer in British slang and tone</p>
+                <p><strong>Model Provider:</strong> OpenAI</p>
+                <p><strong>Model:</strong> gpt-4-turbo</p>
+            </div>
+        </td>
+    </tr>
+</table>
 
 export const Assistant = () => {
   return (
     <div>
-        <iframe src="https://www.assistantshub.ai/embed/asst_P491HeO2xjNweCbZKy2SoPGh"
-         style={{right: 0, position: "fixed", overflow: "hidden", height: "80vh", border: "0 none", width: "80vw", bottom: "40px"}}
+        <iframe src="https://www.assistantshub.ai/embed/asst_P491HeO2xjNweCbZKy2SoPGh?style=window"
+         style={{height: "800px", border: "0 none", width: "480px", minWidth: "340px"}}
          allowFullScreen allowTransparency></iframe>
     </div>
   );
 };
-
-<Assistant/>

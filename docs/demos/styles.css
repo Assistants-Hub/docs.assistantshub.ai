@@ -1,0 +1,22 @@
+.responsive-table {
+    overflow-x: auto; /* Allows horizontal scrolling */
+}
+
+@media (max-width: 768px) { /* Adjusts for tablets and smaller devices */
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        /* Optional: adjust padding and text alignment as needed */
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Since you have images and components, you might need to adjust their sizes as well */
+    img, iframe {
+        max-width: 100%; /* Makes images and iframes responsive */
+        height: auto;
+    }
+}
