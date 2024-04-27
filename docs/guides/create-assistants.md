@@ -20,7 +20,7 @@ Choose one among `OpenAI` or `Google` as the model provider. This cannot be chan
 
 ### Model
 
-Depending on the model provider choice, you will see available models for this assistant. For more information on the supported models, check the [Models Supported](./models-supported) page.
+Depending on the model provider choice, you will see available models for this assistant. For more information on the supported models, check the [Models Supported](../models-supported) page.
 
 <hr/>
 Below is an illustration of the assistant creation form:
