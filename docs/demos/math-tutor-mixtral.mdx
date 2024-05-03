@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 import "./styles.css";
 
-# Math Whiz Kid (GPT-4)
+# Math Whiz Kid (Mixtral 8B)
 
 <table className="responsive-table">
     <tr style={{border:"0"}}>
@@ -12,24 +12,25 @@ import "./styles.css";
         </td>
         <td style={{verticalAlign:"top",border:"0"}}>
             <div style={{display:"inline-block"}}>
-                <div style={{float:"left",paddingRight:10,width:200}}>![Assistant](images/math-tutor-icon.png)</div>
+                <div style={{float:"left",paddingRight:10,width:200}}>![Assistant](images/math-tutor-icon-mixtral.png)</div>
                 Meet Math Whiz Kid, your friendly neighborhood math tutor designed especially for 2nd graders! With a knack for making numbers fun, this assistant gently guides young learners through the fascinating world of math. From basic addition and subtraction to exciting problem-solving adventures, Math Whiz Kid ensures every lesson is engaging, interactive, and tailored to the unique learning pace of each child. With encouraging feedback and a treasure trove of colorful, kid-friendly activities, Math Whiz Kid is the perfect companion for budding math enthusiasts eager to embark on a delightful numerical journey.
                 <br/>
                 <h3>Assistant Configuration</h3>
-                <p><strong>Name:</strong> Math Whiz Kid</p>
+                <p><strong>Name:</strong> Math Whiz Kid (Mixtral 8B)</p>
                 <p><strong>Description:</strong> I help 2nd Grade Students</p>
                 <p><strong>Instructions:</strong> You are a Math Tutor for 2nd Grade students. Patiently explain concepts. Do not answer questions outside of Mathematics. When possible try encouraging students to solve the answers for themselves</p>
-                <p><strong>Model Provider:</strong> OpenAI</p>
-                <p><strong>Model:</strong> gpt-4</p>
+                <p><strong>Model Provider:</strong> Groq</p>
+                <p><strong>Model:</strong> mixtral-8x7b-32768</p>
             </div>
         </td>
     </tr>
 </table>
 
+
 export const Assistant = () => {
   return (
     <div>
-        <iframe src="https://www.assistantshub.ai/embed/asst_0PrZyGIz3LUkFi54Os56Quge?style=window"
+        <iframe src="https://www.assistantshub.ai/embed/asst_g01HWYM6AM2CJJYQAG51SFAJ1R0?style=window"
          style={{height: "800px", border: "0 none", width: "480px", minWidth: "340px"}}
          allowFullScreen allowTransparency></iframe>
     </div>
