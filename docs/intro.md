@@ -33,4 +33,3 @@ Explore our [Guides](https://docs.assistantshub.ai/docs/category/guides) to get 
 
 <hr/>
 <br/>
-Google is a registered trademark of Google LLC. OpenAI is a trademark of OpenAI, Inc. AssistantsHub is not affiliated with, endorsed by, or sponsored by Google LLC or OpenAI, Inc. Reference to any products, services, processes, or other information by trade name, trademark, manufacturer, supplier, or otherwise does not constitute or imply endorsement, sponsorship, or recommendation by Google LLC or OpenAI, Inc.
