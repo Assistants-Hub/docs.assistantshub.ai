@@ -6,20 +6,31 @@ sidebar_position: 1
 
 Welcome to Assistants Hub, where you can **Build, Integrate, and Deploy AI Assistants in Minutes**. This project leverages the power of Next.js, OpenAI, Google and Others to provide a streamlined platform for creating sophisticated AI assistants. Our mission is to democratize AI development, making it accessible for developers, hobbyists, and businesses to innovate and implement AI solutions effortlessly.
 
-## Key Features
-
-<div style={{"display":"inline-block"}}>
-    <div style={{"float":"left","padding-right":"50px"}}>![British Slang](./images/british-slang.gif)</div>
-- **Rapid Development**: Jumpstart your AI assistant project with our easy-to-follow setup and comprehensive documentation.
-- **Seamless Integration**: Connect your assistant with a wide array of APIs and services to enhance its functionality and intelligence.
-- **Community-Powered**: Tap into the collective knowledge of a vibrant community dedicated to pushing the boundaries of AI assistants.
-
-Explore our [Guides](./guides/create-assistants.md) to get started with Assistants Hub or check out our [Demos](./category/demos) to see our AI assistants in action.
+<div style={{width:"380px"}}>
+  ![Math Whiz Kid](./images/math-whiz-kid.gif)
 </div>
 
-<hr/>
-<br/>
-![Assistants Hub](./images/assistants-hub.png)
+## Why should you use Assistants Hub?
+
+Assistants Hub is not another LLM user interface, it is a comprehensive platform that enables businesses and AI practitioners to build, integrate, and deploy AI assistants to their end users with ease. Here are some reasons why you should consider using Assistants Hub:
+
+- **Rapid Build and Rollout**: Quickly create and deploy your AI assistants with our intuitive setup and detailed documentation.
+- **Comprehensive Platform**: Utilize advanced analytics, conversation history tracking, and extensive customization options to tailor your assistant to your needs.
+- **Extensive Collection of Models**: Access a wide variety of AI models to power your assistants, ensuring the best fit for your specific use case.
+
+## Key Features
+
+* **Extensive LLM and GPT models**: Access the latest AI models from OpenAI, Google, and Groq to power your AI assistants.
+* **Streaming Responses**: Enable real-time interactions with your AI assistant through streaming responses.
+* **Analytics**: Monitor and analyze your assistant's performance with detailed analytics and insights.
+* **Conversation Log**: Review and analyze past conversations to improve your assistant's responses.
+* **Customizations**: Tailor your assistant's appearance, behavior, and responses to suit your needs.
+* **Easy Integration**: Seamlessly integrate your assistant with popular platforms and services.
+* **Document Management**: Organize and manage your assistant's documents for quick reference and retrieval.
+* **Function Integration**: Extend your assistant's capabilities by integrating custom functions and services.
+
+Explore our [Guides](https://docs.assistantshub.ai/docs/category/guides) to get started with Assistants Hub or check out our [Demos](https://docs.assistantshub.ai/docs/category/demos) to see our AI assistants in action.
+
 <hr/>
 <br/>
 Google is a registered trademark of Google LLC. OpenAI is a trademark of OpenAI, Inc. AssistantsHub is not affiliated with, endorsed by, or sponsored by Google LLC or OpenAI, Inc. Reference to any products, services, processes, or other information by trade name, trademark, manufacturer, supplier, or otherwise does not constitute or imply endorsement, sponsorship, or recommendation by Google LLC or OpenAI, Inc.

@@ -1,52 +1,11 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
-import Typewriter from 'typewriter-effect';
 
 import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-            <Typewriter
-                options={{
-                    strings: ['Learn', 'Build', 'Deploy', 'Integrate'],
-                    autoStart: true,
-                    loop: true,
-                }}
-            />
-            AI assistants
-            <br />
-            in minutes.
-        </Heading>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-             Get Started - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import {Redirect} from "@docusaurus/router";
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+      <Redirect to="/docs/intro" />
   );
 }
