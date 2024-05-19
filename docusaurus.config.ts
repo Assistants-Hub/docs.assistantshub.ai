@@ -113,11 +113,11 @@ const config: Config = {
           items: [
             {
               label: 'X',
-              to: 'https://www.assistantshub.ai/pages/privacy.html',
+              to: 'https://x.com/assistantshubai',
             },
             {
               label: 'LinkedIn',
-              to: 'https://www.assistantshub.ai/pages/terms.html',
+              to: 'https://www.linkedin.com/company/assistants-hub/',
             },
             {
               label: 'Github',
