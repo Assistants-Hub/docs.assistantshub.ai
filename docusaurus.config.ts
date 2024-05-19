@@ -98,23 +98,59 @@ const config: Config = {
               label: 'Tutorial',
               to: '/docs/intro',
             },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
+            {
+              label: 'Demos',
+              to: '/docs/category/demos',
+            },
             {
               label: 'Blog',
               to: '/blog',
             },
+          ],
+        },
+        {
+          title: 'Social',
+          items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/assistants-hub/assistantshub.ai',
+              label: 'X',
+              to: 'https://www.assistantshub.ai/pages/privacy.html',
+            },
+            {
+              label: 'LinkedIn',
+              to: 'https://www.assistantshub.ai/pages/terms.html',
+            },
+            {
+              label: 'Github',
+              to: 'https://github.com/assistants-hub',
             },
           ],
         },
+        {
+          title: 'Legal',
+          items: [
+            {
+              label: 'Privacy Policy',
+              icon: 'privacy',
+              to: 'https://www.assistantshub.ai/pages/privacy.html',
+            },
+            {
+              label: 'Terms of Service',
+              to: 'https://www.assistantshub.ai/pages/terms.html',
+            },
+            {
+              label: 'Cookie Policy',
+              to: 'https://www.assistantshub.ai/pages/cookies.html',
+            },
+          ],
+        }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Assistants Hub, LLC. All rights reserved.`,
+      logo: {
+        alt: 'Assistants Hub Logo',
+        src: 'img/logo.png',
+        href: 'https://assistantshub.ai',
+        width: 100,
+      },
+      copyright: `© ${new Date().getFullYear()} Assistants Hub, LLC.`,
     },
     prism: {
       theme: prismThemes.github,
