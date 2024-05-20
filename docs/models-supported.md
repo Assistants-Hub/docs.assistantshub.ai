@@ -8,7 +8,6 @@ sidebar_position: 1
 
 All models that support [OpenAI's Assistants API](https://platform.openai.com/docs/models/overview) are supported by [Assistants Hub](https://assistantshub.ai).
 
-
 | Model Name         | Provider | Streaming <br/>Responses | Documents | Functions |
 |--------------------|----------|---------------------|-----------|-----|
 | GPT-4o             | OpenAI   | :white_check_mark:  | :white_check_mark: | :construction: |
@@ -22,21 +21,21 @@ All models that support [OpenAI's Assistants API](https://platform.openai.com/do
 
 The gemini-1.5-pro-latest model is a large-scale language model developed by Google. It is designed to generate human-like text based on the input provided to it. The model is trained on a diverse range of text data to ensure that it can handle a wide variety of tasks and topics. [Read More](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/#sundar-note)
 
-
-| Model Name            | Provider | Streaming <br/>Responses | Documents | Functions |
-|-----------------------|----------|---------------------|-----------|-----|
-| Gemini-1.5-pro-latest | Google | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Model Name              | Provider | Streaming <br/>Responses | Documents | Functions |
+|-------------------------|----------|---------------------|-----------|-----|
+| Gemini-1.5-Pro-latest   | Google | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Gemini-1.5-Falsh-latest | Google | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
 
 ## Gorq Cloud
 
 All models that support [Gorq Cloud API](https://console.groq.com/docs/models) are supported by [Assistants Hub](https://assistantshub.ai).
 
-| Model Name            | Provider | Streaming <br/>Responses | Documents | Functions |
-|-----------------------|----------|---------------------|-----------|-----|
-| Llama3-8b-8192        | Groq | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
-| Llama3-70b-8192       | Groq | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
-| Mixtral-8x7b-32768    | Groq | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
-| gemma-7b-it-8192      | Groq | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Model Name         | Provider | Streaming <br/>Responses | Documents | Functions |
+|--------------------|----------|---------------------|-----------|-----|
+| Llama3-8b-8192     | Groq | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Llama3-70b-8192    | Groq | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Mixtral-8x7b-32768 | Groq | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Gemma-7b-it-8192   | Groq | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
 
 <hr/>
 <br/>
