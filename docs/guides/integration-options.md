@@ -4,9 +4,13 @@ sidebar_position: 6
 
 # Integration Options
 
-There are 3 different ways you can integrate an assistant to your web project:
+There are 4 different ways you can integrate an assistant to your web project:
 
-### 1. Floating Assistant Button
+### 1. Full Page Integration
+
+You can get a permalink to your assistant and share it as a full page link. This is the simplest way to integrate an assistant to your website. You can get the permalink from the assistant's integration page.
+
+### 2. Floating Assistant Button
 
 <div style={{maxWidth:"100px"}}>![Floating Assistant Button](../images/floating-icon.png)</div>
 
@@ -25,7 +29,7 @@ This one shows as an avatar button floating on the right bottom corner of the we
          allowTransparency></iframe>
 ```
 
-### 2. Chat Window Integration
+### 3. Chat Window Integration
 
 <div style={{maxWidth:"300px"}}>![Chat Window Integration](../images/window.png)</div>
 
@@ -40,7 +44,7 @@ This one shows as an avatar button floating on the right bottom corner of the we
 ```
 
 
-### 3. Frameless Chat Window Integration
+### 4. Frameless Chat Window Integration
 
 <div style={{maxWidth:"300px"}}>![Chat Window Integration](../images/window-frameless.png)</div>
 

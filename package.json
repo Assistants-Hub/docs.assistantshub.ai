@@ -15,9 +15,9 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "3.1.1",
-    "@docusaurus/plugin-vercel-analytics": "^0.0.0-5831",
-    "@docusaurus/preset-classic": "3.1.1",
+    "@docusaurus/core": "^3.3.2",
+    "@docusaurus/plugin-vercel-analytics": "^3.3.2",
+    "@docusaurus/preset-classic": "^3.3.2",
     "@gracefullight/docusaurus-plugin-vercel-analytics": "^1.0.1",
     "@mdx-js/react": "^3.0.0",
     "@vercel/analytics": "^1.2.2",
@@ -25,11 +25,12 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "redocusaurus": "^2.0.2",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.1.1",
-    "@docusaurus/tsconfig": "3.1.1",
+    "@docusaurus/module-type-aliases": "^3.3.2",
+    "@docusaurus/tsconfig": "^3.3.2",
     "@docusaurus/types": "3.1.1",
     "typescript": "~5.2.2"
   },

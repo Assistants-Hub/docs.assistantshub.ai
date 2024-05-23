@@ -1,0 +1,195 @@
+openapi: 3.0.0
+info:
+  title: Data Provider API specification
+  description: <img src="https://assistantshub.ai/logo.png" width="80px" /> <br/><br/>This API specification is to be implemented by Data Providers who would like to source data into Assistants Hub for use with their assistants. Assistants Hub will use these APIs to connect to the Data Provider. <br/><br/>To securely manage data connections for various assistants, OAuth 2.0 client credentials flow for machine-to-machine authentication will be used. This provides a robust and secure way for systems to interact without human intervention.
+  version: 1.0.0
+servers:
+  - url: 'https://connections.assistantshub.ai/data'
+    description: Production
+  - url: 'https://preview-connections.assistantshub.ai/data'
+    description: Staging
+  - url: 'https://dev-connections.assistantshub.ai/data'
+    description: Development
+paths:
+  /token:
+    post:
+      tags:
+        - Auth
+      summary: "OAuth 2.0 Token Endpoint"
+      description: "This endpoint is used to obtain access tokens in the client credentials flow. Assistants Hub will provide its client_id and client_secret and receive a token in return."
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                grant_type:
+                  type: string
+                  description: Grant type value must be 'client_credentials'
+                  default: 'client_credentials'
+                client_id:
+                  type: string
+                  description: The client ID issued to Assistants Hub by the data provider
+                client_secret:
+                  type: string
+                  description: The client secret issued to Assistants Hub by the data provider
+              required:
+                - grant_type
+                - client_id
+                - client_secret
+      responses:
+        '200':
+          description: Access token is provided
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                    description: The access token issued by the authorization server
+                  token_type:
+                    type: string
+                    description: The type of the token issued
+                    default: 'Bearer'
+                  expires_in:
+                    type: integer
+                    description: The lifetime in seconds of the access token
+                  scope:
+                    type: string
+                    description: The scope of the access token
+  /connections:
+    post:
+      summary: Create a new data connection on the data provider by Assistants Hub
+      operationId: createConnection
+      tags:
+        - Connections
+      security:
+        - OAuth2: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConnectionRequest'
+      responses:
+        '201':
+          description: Successfully created a data connection
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConnectionResponse'
+  /connections/{id}:
+    put:
+      summary: Update an existing data connection on the data provider by Assistants Hub
+      operationId: updateConnection
+      tags:
+        - Connections
+      security:
+        - OAuth2: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            example: "conn_01HYHZBMX7V27TSCJP55PJ61TX"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConnectionRequest'
+      responses:
+        '200':
+          description: Data connection updated successfully
+        '404':
+          description: Connection not found
+    get:
+      summary: Retrieve details of a data connection from the data provider by Assistants Hub
+      operationId: getConnectionDetails
+      tags:
+        - Connections
+      security:
+        - OAuth2: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            example: "conn_01HYHZBMX7V27TSCJP55PJ61TX"
+      responses:
+        '200':
+          description: Successful retrieval of connection details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConnectionResponse'
+        '404':
+          description: Connection not found
+    delete:
+      summary: Delete a data connection on the data provider by Assistants Hub
+      operationId: deleteConnection
+      tags:
+        - Connections
+      security:
+        - OAuth2: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            example: "conn_01HYHZBMX7V27TSCJP55PJ61TX"
+      responses:
+        '204':
+          description: Data connection deleted successfully
+        '404':
+          description: Connection not found
+components:
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://api.yourdomain.com/token
+          scopes: {}
+  schemas:
+    ConnectionRequest:
+      type: object
+      required:
+        - providerId
+        - assistantId
+        - type
+        - source
+      properties:
+        providerId:
+          type: string
+          example: "provider_01HYHZ576RYCG07ZJ8R7X3HDJV"
+        assistantId:
+          type: string
+          example: "asst_01HYHZAW0FSZRTQ19CDKBER8HF"
+        type:
+          type: string
+          example: "crawl"
+        source:
+          type: string
+          example: "https://www.example.com"
+    ConnectionResponse:
+      type: object
+      properties:
+        connectionId:
+          type: string
+          example: "conn_01HYHZBMX7V27TSCJP55PJ61TX"
+        providerId:
+          type: string
+        assistantId:
+          type: string
+        type:
+          type: string
+        source:
+          type: string
+security:
+  - OAuth2: []
