@@ -20,7 +20,7 @@ Assistants Hub is not another LLM user interface, it is a comprehensive platform
 
 ## Key Features
 
-* **Extensive LLM and GPT models**: Access the latest AI models from OpenAI, Google, and Groq to power your AI assistants.
+* **Extensive LLM and GPT models**: Access the latest AI models from OpenAI, Google, Anthropic and Groq to power your AI assistants.
 * **Streaming Responses**: Enable real-time interactions with your AI assistant through streaming responses.
 * **Analytics**: Monitor and analyze your assistant's performance with detailed analytics and insights.
 * **Conversation Log**: Review and analyze past conversations to improve your assistant's responses.

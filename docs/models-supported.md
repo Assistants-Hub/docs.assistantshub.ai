@@ -26,6 +26,16 @@ The gemini-1.5-pro-latest model is a large-scale language model developed by Goo
 | Gemini-1.5-Pro-latest   | Google | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
 | Gemini-1.5-Falsh-latest | Google | :white_check_mark:  | :heavy_multiplication_x: | :heavy_multiplication_x: |
 
+### Anthropic Models
+
+All models that support [Anthropic API](https://docs.anthropic.com/en/docs/models-overview) are supported by [Assistants Hub](https://assistantshub.ai).
+
+| Model Name      | Provider  | Streaming <br/>Responses | Documents                | Functions                |
+|-----------------|-----------| ------------------------ | ------------------------ | ------------------------ |
+| Claude 3 Opus   | Anthropic | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Claude 3 Sonnet | Anthropic | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Claude 3 Haiku  | Anthropic | :white_check_mark:       | :heavy_multiplication_x: | :heavy_multiplication_x: |
+
 ## Gorq Cloud
 
 All models that support [Gorq Cloud API](https://console.groq.com/docs/models) are supported by [Assistants Hub](https://assistantshub.ai).
@@ -39,4 +49,4 @@ All models that support [Gorq Cloud API](https://console.groq.com/docs/models) a
 
 <hr/>
 <br/>
-Google is a registered trademark of Google LLC. OpenAI is a trademark of OpenAI, Inc.Groq, GroqCloud™ and the GroqCloud logo are trademarks or registered trademarks of Groq, Incs. AssistantsHub is not affiliated with, endorsed by, or sponsored by Google LLC, Groq Inc or OpenAI, Inc. Reference to any products, services, processes, or other information by trade name, trademark, manufacturer, supplier, or otherwise does not constitute or imply endorsement, sponsorship, or recommendation by Google LLC, Groq Inc, or OpenAI, Inc.
+Google is a registered trademark of Google LLC. OpenAI is a trademark of OpenAI, Inc. Anthropic and Claude are registered trademarks of Anthropic. Groq, GroqCloud™ and the GroqCloud logo are trademarks or registered trademarks of Groq, Incs. AssistantsHub is not affiliated with, endorsed by, or sponsored by Google LLC, Groq Inc or OpenAI, Inc. Reference to any products, services, processes, or other information by trade name, trademark, manufacturer, supplier, or otherwise does not constitute or imply endorsement, sponsorship, or recommendation by Google LLC, Groq Inc, or OpenAI, Inc.

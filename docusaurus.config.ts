@@ -108,7 +108,7 @@ const config: Config = {
         {to: '/docs/category/demos', label: 'Demos', position: 'left'},
         {
           type: 'dropdown',
-          label: 'Integrations',
+          label: 'Data Integrations',
           position: 'left',
           items: [
             {
