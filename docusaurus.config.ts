@@ -40,7 +40,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/assistants-hub/docs.assistantshub.ai/edit/main/sidebars.ts',
-          sidebarCollapsed: false,
+          sidebarCollapsed: false
         },
         blog: {
           showReadingTime: true,
@@ -51,6 +51,10 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        gtag: {
+          trackingID: 'G-ZVFH63MCWQ',
+          anonymizeIP: true,
         },
       } satisfies Preset.Options,
     ],
